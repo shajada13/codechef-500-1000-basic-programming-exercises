@@ -1,21 +1,54 @@
-// Janmansh and Assignments
+https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/JASSIGNMENTS
 
-// Janmansh has to submit 3 assignments for Chingari before 10 pm
-// and he starts to do the assignments at X pm.
-// Each assignment takes him 1 hour to complete.
-// Can you tell whether he'll be able to complete all assignments on time or not?
 
-// Input Format:
-// - The first line will contain T — the number of test cases.
-// - The first and only line of each test case contains one integer X — 
-//   the time when Janmansh starts doing the assignments.
+============================
+// Problem: Janmansh and Assignments
+// ============================
 
-// Output Format:
-// - For each test case, output "Yes" if he can complete the assignments on time.
-// - Otherwise, output "No".
-// - You may print each character of Yes and No in uppercase or lowercase 
-//   (for example: yes, yEs, YES will be considered identical).
+// 📌 Details (English):
+// - Janmansh has 3 assignments.
+// - Each takes 1 hour → total = 3 hours.
+// - Deadline = 10 PM.
+// - He starts at X PM.
 
-// Constraints:
-// 1 ≤ T ≤ 10
-// 1 ≤ X ≤ 9
+// 📌 বিবরণ (বাংলা):
+// - Janmansh এর করতে হবে ৩টা assignment।
+// - প্রতিটা করতে লাগবে ১ ঘণ্টা → মোট সময় = ৩ ঘণ্টা।
+// - শেষ করার ডেডলাইন = রাত ১০টা।
+// - সে শুরু করবে X টায়।
+
+// ============================
+// ✅ Condition / Formula
+// Finish time = X + 3
+// If (X + 3 <= 10) → YES
+// Else → NO
+
+// শর্ত / সূত্র (বাংলা):
+// শেষ করার সময় = X + 3
+// যদি (X + 3 <= 10) হয় → YES
+// নাহলে → NO
+// ============================
+
+// ============================
+// 🔹 Example Walkthrough
+// Input:
+// 3
+// 7
+// 8
+// 9
+//
+// Check (English):
+// - Start 7 → 7+3=10 → YES
+// - Start 8 → 8+3=11 → NO
+// - Start 9 → 9+3=12 → NO
+//
+// চেক (বাংলা):
+// - শুরু ৭ টায় → ৭+৩=১০ → YES
+// - শুরু ৮ টায় → ৮+৩=১১ → NO
+// - শুরু ৯ টায় → ৯+৩=১২ → NO
+//
+// Output:
+// YES
+// NO
+// NO
+// ============================

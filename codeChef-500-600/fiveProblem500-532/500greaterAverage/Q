@@ -1,26 +1,23 @@
-Greater Average
+https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/AVGPROBLEM 
 
-You are given 3 numbers A, B, and C.
-Determine whether the average of A and B is strictly greater than C or not.
+📝 Summary (English)
 
-Definition:
-The average of A and B is defined as:
-Average = (A + B) / 2
+You are given 3 integers A, B, and C.
+You need to check whether the average of A and B ( (A + B) / 2 ) is strictly greater than C.
 
-Examples:
-Average of 5 and 9 is 7
-Average of 5 and 8 is 6.5
+If (A + B) / 2 > C, print YES.
 
-Input Format:
-- The first line of input will contain a single integer T, denoting the number of test cases.
-- Each test case consists of 3 integers A, B, and C.
+Otherwise, print NO.
 
-Output Format:
-- For each test case, output YES if average of A and B is strictly greater than C.
-- Otherwise, output NO.
-- You may print each character of the string in uppercase or lowercase 
-  (for example: YES, yes, YeS will all be treated as identical).
+This must be done for T test cases.
 
-Constraints:
-1 ≤ T ≤ 1000
-1 ≤ A, B, C ≤ 10
+📝 সংক্ষেপে (বাংলা)
+
+তোমাকে ৩টা সংখ্যা A, B, C দেওয়া হবে।
+চেক করতে হবে, A আর B এর average ((A+B)/2) কি C এর থেকে বড় কি না।
+
+যদি বড় হয় → প্রিন্ট করবে YES
+
+নাহলে → প্রিন্ট করবে NO
+
+এভাবে মোট T টেস্টকেস এর জন্য কাজ করতে হবে।

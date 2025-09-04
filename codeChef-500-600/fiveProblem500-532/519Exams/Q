@@ -1,25 +1,56 @@
-// Exams
+https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/EXAMCHEF
 
-// In Chefland, there are X schools, and each school has Y students.
-// The year end results are in and a total of Z students passed the exams.
 
-// Assuming that all students appeared for the exams,
-// find whether the number of students who passed in Chefland was strictly greater than 50%.
+// ============================
+// Problem: Exams
+// ============================
 
-// Input Format:
-// - The first line of input will contain a single integer T, denoting the number of test cases.
-// - Each test case consists of three space-separated integers X, Y, and Z,
-//   as mentioned in the statement.
+// 📌 Details (English):
+// - In Chefland, there are X schools.
+// - Each school has Y students.
+// - So, total students = X * Y.
+// - Out of them, Z students passed.
+// - We need to check if passed students > 50% of total students.
 
-// Output Format:
-// - For each test case, output on a new line "YES",
-//   if the total number of students who passed in Chefland was strictly greater than 50%,
-//   otherwise print "NO".
-// - You may print each character of the string in uppercase or lowercase
-//   (for example: YES, yEs, yes, and yeS will all be treated as identical).
+// 📌 বিবরণ (বাংলা):
+// - Chefland-এ X টি স্কুল আছে।
+// - প্রতিটা স্কুলে আছে Y জন করে ছাত্র।
+// - তাই মোট ছাত্র = X * Y।
+// - এর মধ্যে Z জন পাশ করেছে।
+// - এখন দেখতে হবে পাশ করা ছাত্ররা কি মোট ছাত্রদের ৫০% এর বেশি কিনা।
 
-// Constraints:
-// 1 ≤ T ≤ 2 * 10^4
-// 1 ≤ X ≤ 5
-// 1 ≤ Y ≤ 50
-// 0 ≤ Z ≤ X * Y
+// ============================
+// ✅ Condition / Formula
+// Total = X * Y
+// If (Z * 2 > Total) → YES
+// Else → NO
+
+// শর্ত / সূত্র (বাংলা):
+// মোট = X * Y
+// যদি (Z * 2 > মোট) হয় → YES
+// নাহলে → NO
+// ============================
+
+// ============================
+// 🔹 Example Walkthrough
+// Input:
+// 3
+// 2 10 15
+// 2 10 10
+// 3 4 5
+//
+// Check (English):
+// - Case1: total=20, passed=15 → 15*2=30 > 20 → YES
+// - Case2: total=20, passed=10 → 10*2=20 (not greater) → NO
+// - Case3: total=12, passed=5 → 5*2=10 < 12 → NO
+//
+// চেক (বাংলা):
+// - কেস১: মোট=20, পাশ=15 → 15*2=30 > 20 → YES
+// - কেস২: মোট=20, পাশ=10 → 10*2=20 (৫০% সমান, বেশি না) → NO
+// - কেস৩: মোট=12, পাশ=5 → 5*2=10 < 12 → NO
+//
+// Output:
+// YES
+// NO
+// NO
+// ============================
